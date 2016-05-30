@@ -1,0 +1,5 @@
+# Specify the addresses or names of other Weave hosts to join the network
+PEERS=""
+
+# Specify a password if you want to enable encryption
+WEAVE_PASSWORD=""

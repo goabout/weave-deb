@@ -1,0 +1,2 @@
+systemctl enable weave
+systemctl start weave
