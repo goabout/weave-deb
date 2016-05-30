@@ -16,4 +16,4 @@ rm -f weave_${VERSION}_amd64.deb
 fpm -t deb -s dir -n $NAME -v $VERSION --description "$DESCRIPTION" -C dist \
   --vendor "$VENDOR" -m "$MAINTAINER" --license "$LICENSE" --url $URL \
   --after-install scripts/after-install --before-remove scripts/before-remove \
-  --deb-changelog changelog --deb-no-default-config-files --config-files etc --log debug .
+  --deb-no-default-config-files --config-files etc .
