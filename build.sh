@@ -2,7 +2,7 @@
 
 NAME=weave
 BINARY=/usr/sbin/weave
-VERSION=${VERSION:?must be set}
+VERSION=1.5.2
 DESCRIPTION='Simple, resilient multi-host Docker networking and more'
 URL=https://github.com/weaveworks/weave
 VENDOR='GoAbout'

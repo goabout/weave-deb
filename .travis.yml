@@ -1,9 +1,6 @@
-env:
-  - VERSION=1.5.2
-
 before_install:
   - gem install fpm package_cloud
 
 script:
   - ./build.sh
-  - package_cloud push goabout/ubuntu/xenial/$VERSION weave_*.deb
+  - package_cloud push goabout/deb/ubuntu/xenial weave_*.deb
