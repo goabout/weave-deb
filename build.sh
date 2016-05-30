@@ -9,6 +9,7 @@ VENDOR='GoAbout'
 MAINTAINER='Joost Cassee <joost.cassee@goabout.com>'
 LICENSE='Apache License 2.0'
 
+mkdir -p `dirname dist$BINARY`
 wget -O dist$BINARY https://github.com/weaveworks/weave/releases/download/v$VERSION/weave
 chmod 0755 dist$BINARY
 
