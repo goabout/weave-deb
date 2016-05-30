@@ -9,8 +9,8 @@ VENDOR='GoAbout'
 MAINTAINER='Joost Cassee <joost.cassee@goabout.com>'
 LICENSE='Apache License 2.0'
 
-#wget -O dist$BINARY https://github.com/weaveworks/weave/releases/download/v$VERSION/weave
-#chmod 0755 dist$BINARY
+wget -O dist$BINARY https://github.com/weaveworks/weave/releases/download/v$VERSION/weave
+chmod 0755 dist$BINARY
 
 rm -f weave_${VERSION}_amd64.deb
 fpm -t deb -s dir -n $NAME -v $VERSION --description "$DESCRIPTION" -C dist \
