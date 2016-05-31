@@ -1,5 +1,6 @@
-# Specify the addresses or names of other Weave hosts to join the network
-PEERS=""
+# Add any extra arguments to the call to weave, for example specify the
+# addresses or names of other Weave hosts to join the network
+WEAVE_ARGS=""
 
 # Specify a password if you want to enable encryption
 WEAVE_PASSWORD=""

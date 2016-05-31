@@ -5,7 +5,7 @@ Requires=docker.service
 After=docker.service
 [Service]
 EnvironmentFile=-/etc/default/weave
-ExecStartPre=/usr/sbin/weave launch $PEERS
+ExecStartPre=/usr/sbin/weave launch $WEAVE_ARGS
 ExecStart=/usr/bin/docker attach weave
 ExecStop=/usr/sbin/weave stop
 [Install]
